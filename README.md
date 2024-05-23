@@ -5,6 +5,9 @@ You can also try to minimize the number of times the display is updated by updat
 ###In this modified version, the functions start the serial data transfer, send the row address, send the segment data, and then end the serial data transfer in a single block. This should reduce the number of individual Serial_Data_Reset() and Serial_Clk_Reset() calls, potentially improving the display update performance.
 
 Additionally, you can consider implementing a more efficient display update mechanism, where you only update the segments that have changed since the last update, instead of refreshing the entire display on each iteration. This can further optimize the display update process.
+###
+
+// Start 
 void SendToSegment5Digit(unsigned char SegSTR[5], unsigned char ROW) {
     unsigned char i;
     unsigned char data;
