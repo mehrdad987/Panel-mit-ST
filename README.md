@@ -46,7 +46,6 @@ void SendToSegment5Digit(unsigned char SegSTR[5], unsigned char ROW) {
     Serial_Data_Reset();
     Serial_Clk_Reset();
 }
-
 void SendToSegment4Digit(unsigned char SegSTR[4], unsigned char ROW) {
     unsigned char i;
     unsigned char data;
